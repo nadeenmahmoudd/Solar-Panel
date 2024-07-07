@@ -4,13 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navbarLinks.forEach(link => {
         link.addEventListener('click', (event) => {
-            // Prevent default behavior if the links don't navigate
             event.preventDefault();
 
-            // Remove 'active' class from all links
             navbarLinks.forEach(link => link.classList.remove('active'));
 
-            // Add 'active' class to the clicked link
             event.target.classList.add('active');
         });
     });
@@ -29,7 +26,6 @@ images.forEach(function(image) {
     }
 });
 
-// Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
@@ -60,7 +56,6 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
 // document.addEventListener("DOMContentLoaded", function() {
 //     const menuIcon = document.getElementById("menu-icon");
 //     const navLinks = document.getElementById("nav-links");
